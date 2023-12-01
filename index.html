@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="icon" href=".//weathericons/Rain.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="headercontents">
+            <p><i class="fa-solid fa-cloud-sun"></i>Weather App</p>
+        <nav>
+            <a href="mailto:gowrisankar.3033@gmail.com">Mail us</a>
+            <a href="https://www.linkedin.com/in/gowri-sankar-t-80a927265/" target="_blank">About</a>
+        </nav>
+        </div>
+    </header>
+    <div class="container">
+        <div class="searchbox">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Search City">
+            <button><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="weatherbox">
+            <div class="weather-details">
+                <div class="box">
+                    <img src="./weathericons/Cloudy.png"/>
+                    <div class="weather">
+                    <p class="temp">16<span>°C</span></p>
+                    <p class="weather-description">Moderate Rain</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="weather-info">
+                <div class="humidity">
+                    <i class="fa-solid fa-water"></i>
+                    <div class="humiditydetails">
+                        <p id="humidityvalue">0%</p>
+                        <p class="humidity">Humidity</p>
+                    </div>
+                    
+                </div>
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="winddetails">
+                        <p id="windvalue">0 Km/h</p>
+                        <p class="humidity">Wind Speed</p>
+                    </div>
+                </div>
+        </div>
+        
+        </div>
+        <div class="error">
+            <img src="./weathericons/error.png"/>
+            <p>Oops! City Not Found!</p>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
